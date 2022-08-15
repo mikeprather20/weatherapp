@@ -9,7 +9,7 @@ cityForm.addEventListener('submit', (event)=>{
 
 
 const connect2api = async (cityName)=>{
-    const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=0fa2d64ccdcdfb651ebc982ac829c480&units=imperial`)
+    const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=[put your token here]&units=imperial`)
     const data = await res.json()
     console.log(data)
     return data
